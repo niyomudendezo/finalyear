@@ -1,0 +1,133 @@
+.hr-hero {
+    background: linear-gradient(135deg, #173f5f 0%, #20639b 55%, #3caea3 100%);
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.hr-hero .panel-body {
+    padding: 25px 28px;
+}
+
+.hr-hero h2,
+.hr-hero h4,
+.hr-hero p {
+    color: #fff;
+}
+
+.hr-quick-actions .btn {
+    margin: 3px;
+}
+
+.hr-hero .btn-light {
+    background: rgba(255, 255, 255, .16);
+    border: 1px solid rgba(255, 255, 255, .48);
+    color: #fff;
+}
+
+.hr-hero .btn-light:hover,
+.hr-hero .btn-light:focus {
+    background: #fff;
+    color: #173f5f;
+}
+
+.hr-kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.hr-kpi-card {
+    position: relative;
+    min-height: 118px;
+    padding: 18px 18px 15px 72px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e8edf2;
+    border-radius: 9px;
+    box-shadow: 0 2px 8px rgba(20, 54, 82, .07);
+}
+
+.hr-kpi-card .hr-kpi-icon {
+    position: absolute;
+    top: 18px;
+    left: 17px;
+    width: 42px;
+    height: 42px;
+    border-radius: 9px;
+    color: #fff;
+    font-size: 19px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.hr-kpi-card .hr-kpi-value {
+    margin: 0 0 4px;
+    color: #263238;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.hr-kpi-card .hr-kpi-label {
+    margin: 0;
+    color: #718096;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+}
+
+.hr-kpi-card.accent-blue .hr-kpi-icon { background: #20639b; }
+.hr-kpi-card.accent-green .hr-kpi-icon { background: #2e9d69; }
+.hr-kpi-card.accent-orange .hr-kpi-icon { background: #f6a623; }
+.hr-kpi-card.accent-red .hr-kpi-icon { background: #d9534f; }
+.hr-kpi-card.accent-purple .hr-kpi-icon { background: #7451a6; }
+.hr-kpi-card.accent-teal .hr-kpi-icon { background: #2b9a9a; }
+.hr-kpi-card.accent-slate .hr-kpi-icon { background: #607d8b; }
+.hr-kpi-card.accent-indigo .hr-kpi-icon { background: #4d67b1; }
+
+.hr-panel {
+    border: 1px solid #e8edf2;
+    border-radius: 9px;
+    box-shadow: 0 2px 8px rgba(20, 54, 82, .06);
+}
+
+.hr-panel .panel-heading {
+    background: #fff;
+    border-bottom: 1px solid #edf1f5;
+    border-radius: 9px 9px 0 0;
+}
+
+.hr-list-item {
+    padding: 11px 0;
+    border-bottom: 1px solid #edf1f5;
+}
+
+.hr-list-item:last-child {
+    border-bottom: 0;
+}
+
+.hr-progress-track {
+    height: 8px;
+    margin-top: 6px;
+    overflow: hidden;
+    background: #edf1f5;
+    border-radius: 5px;
+}
+
+.hr-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #20639b, #3caea3);
+    border-radius: 5px;
+}
+
+@media (max-width: 1100px) {
+    .hr-kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 600px) {
+    .hr-kpi-grid { grid-template-columns: 1fr; }
+}

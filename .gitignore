@@ -1,0 +1,16 @@
+# Uploaded road images (large files)
+uploads/road_images/*
+!uploads/road_images/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.idea/
+
+# PHP error logs
+error_log
+*.log
+config.bat
+node_modules
